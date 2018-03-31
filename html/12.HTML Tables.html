@@ -1,0 +1,234 @@
+<html>
+<head>
+<title>HTML Tables</title>
+<link rel="shortcut icon" href="icon.ico" />
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="content.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<ul class="left">
+	<lh class="left">HTML Tutorial</lh>
+	<li class="left"><a href="1.html Introduction.html">HTML Introduction</a></li>
+	<li class="left"><a href="2.html basics.html">HTML Basics</a></li> 
+	<li class="left"><a href="3.html elements.html">HTML Elements</a></li> 
+	<li class="left"><a href="4.HTML Attributes.html">HTML Atrributes</a></li> 
+	<li class="left"><a href="5.html Headings.html">HTML Headings</a></li> 
+	<li class="left"><a href="6.html paragraph.html">HTML Paragraph</a></li> 
+	<li class="left"><a href="7.html style.html">HTML Style</a></li> 
+	<li class="left"><a href="8.html Formatting.html">HTML Formatting</a></li> 
+	<li class="left"><a href="9.html Comments.html">HTML Comments</a></li> 
+	<li class="left"><a href="10.html Links.html">HTML Links</a></li> 
+	<li class="left"><a href="11.html Images.html">HTML Images</a></li> 
+	<li class="left" style="background-color:mediumseagreen;"><a href="12.html Tables.html">HTML Tables</a></li> 
+	<li class="left"><a href="13.html Lists.html">HTML Lists</a></li> 
+	<li class="left"><a href="14.html blocks.html">HTML Blocks</a></li> 
+	<li class="left"><a href="15.html id.html">HTML ID</a></li> 
+	<li class="left"><a href="16.html Iframe.html">HTML Iframe</a></li> 
+	<li class="left"><a href="17.html Javascript.html">HTML Javascript</a></li> 
+	<li class="left"><a href="18.html Symbols.html">HTML Symbols</a></li> 
+	<li class="left"><a href="19.css.html">HTML Css</a></li> 
+	<li class="left"><a href="20. html forms.html">HTML Forms</a></li> 
+	<li class="left"><a href="21.html intro.html">HTML5 Intro</a></li> 
+	<li class="left"><a href="22. html new elements.html">HTML New Elements</a></li> 
+	<li class="left"><a href="23. html media.html">HTML Media</a></li> 
+	<li class="left"><a href="24. html audio.html">HTML Audio</a></li> 
+	<li class="left"><a href="25.html plugins.html">HTML Plugins</a></li> 
+</ul>
+<ul class="top">
+<li class="top"><a href="logo.png">HTML</a>
+<li class="top"><a href="logo.png">CSS</a>
+<li class="top"><a href="file:///C:/Users/aaa/Desktop/project/sql/1.introduction.html">SQL</a>
+</ul>
+<h1 class="heading">HTML Tables</h1>
+<p class="p2">HTML Table Example</p>
+<table class="versions">
+	<tr>
+		<th>Company</th>
+		<th>Contact</th>
+		<th>Country</th>
+	</tr>
+	<tr>
+		<td>Alfreds Futterkiste</td>
+		<td>Maria Anders</td>
+		<td>Germany</td>
+	</tr>
+	<tr>
+		<td>Ernst Handel</td>
+		<td>Roland Mendel</td>
+		<td>Austria</td>
+	</tr>
+	<tr>
+		<td>Island Trading</td>
+		<td>Helen Bennett</td>
+		<td>UK</td>
+	</tr>
+	<tr>
+		<td>Laughing Bacchus Winecellars</td>
+		<td>Yoshi Tannamuri</td>
+		<td>Canada</td>
+	</tr>
+</table><hr>
+<p class="p2">Defining an HTML Table</p>
+<p class="p3">An HTML table is defined with the <b>&lttable&gt</b>tag. <br><br></p>
+<p class="p3">
+Each table row is defined with the <b>&lttr&gt</b>tag. A table header is defined with the <b>&ltth&gt</b>tag. By default, table headings are bold and centered. A table data/cell is defined with the <b>&lttd&gt</b>tag. </p>
+<div class="example">
+	<h1 class="ex">Example:</h1>
+<p class="eg">
+&lttable style&gt
+  <br>&lttr&gt
+    <br>&ltth&gtFirstname&lt/th&gt
+    <br>&ltth&gtLastname&lt/th&gt
+    <br>&ltth&gtAge&lt/th&gt
+  <br>&lt/tr&gt
+  <br>&lttr&gt
+    <br>&lttd&gtShivansh&lt/td&gt
+    <br>&lttd&gtGupta&lt/td&gt
+    <br>&lttd&gt20&lt/td&gt
+  <br>&lt/tr&gt
+  <br>&lttr&gt
+    <br>&lttd&gtTushar&lt/td&gt
+    <br>&lttd&gtGupta&lt/td&gt 
+    <br>&lttd&gt19&lt/td&gt
+  <br>&lt/tr&gt
+&lt/table&gt
+</p>
+	<h1 class="ex">Output:</h1>
+
+<img class="egs" src="pics\Table1.png">
+</div>
+<hr>
+<p class="p2">HTML Table - Adding a Border</p>
+<p class="p3" style="line-height: 40px">If you do not specify a border for the table, it will be displayed without borders. <br>
+A border is set using the CSS &ltb&gtborder&lt/b&gt property:</p>
+<p class="p1">table, th, td { <br>
+    border: 1px solid black;  <br>
+}</p>
+<hr>
+<p class="p2">HTML Table - Collapsed Borders</p>
+<p class="p3">If you want the borders to collapse into one border, add the CSS <b>border-collapse</b> property:</p>
+<p class="p1">table, th, td { <br>
+    border: 1px solid black; <br>
+    border-collapse: collapse;  <br>
+}</p>
+<hr>
+<p class="p2">HTML Table - Left-align Headings</p>
+<p class="p3" style="line-height: 40px">By default, table headings are bold and centered. <br>
+
+To left-align the table headings, use the CSS <b>text-align</b> property:</p>
+<p class="p1">th { <br>
+    text-align: left; <br>
+}</p>
+<hr>
+<p class="p2">HTML Table - Adding Border Spacing</p>
+<p class="p3" style="line-height: 40px">Border spacing specifies the space between the cells. <br>
+
+To set the border spacing for a table, use the CSS border-spacing property: </p>
+<p class="p1">table { <br>
+    border-spacing: 5px; <br>
+}</p>
+<hr>
+<p class="p2">HTML Table - Cells that Span Many Columns</p>
+<p class="p3">To make a cell span more than one column, use the <b>colspan</b> attribute:</p>
+<div class="example">
+	<h1 class="ex">Example:</h1>
+<p class="eg">
+
+	&lttable&gt
+  <br>&lttr&gt
+    <br>&ltth&gtName&lt/th&gt
+    <br>&ltth colspan="2"&gtTelephone&lt/th&gt
+  <br>&lt/tr&gt
+  <br>&lttr&gt
+    <br>&lttd&gtBill Gates&lt/td&gt
+    <br>&lttd&gt55577854&lt/td&gt
+    <br>&lttd&gt55577855&lt/td&gt
+  <br>&lt/tr&gt
+<br>&lt/table&gt
+</p>
+</div>
+<hr>
+<p class="p2">HTML Table - Cells that Span Many Rows</p>
+<p class="p3">To make a cell span more than one row, use the <b>rowspan</b> attribute:</p>
+<div class="example">
+	<h1 class="ex">Example:</h1>
+<p class="eg">
+<br>&lttable&gt
+ <br> &lttr&gt
+  <br>  &ltth&gtName:&lt/th&gt
+   <br> &lttd&gtBill Gates&lt/td&gt
+ <br> &lt/tr&gt
+ <br> &lttr&gt
+   <br> &ltth rowspan="2"&gtTelephone:&lt/th&gt
+  <br>  &lttd&gt55577854&lt/td&gt
+ <br> &lt/tr&gt
+   <b>r</b> &lttr&gt
+   <br> &lttd&gt55577855&lt/td&gt
+  <br>&lt/tr&gt
+<br>&lt/table&gt
+</p>
+</div>
+<hr>
+<p class="p2">HTML Table - Adding a Caption</p>
+<p class="p3">To add a caption to a table, use the <b>&ltcaption&gt</b> tag:</p>
+<div class="example">
+	<h1 class="ex">Example:</h1>
+<p class="eg">
+&lttable&gt
+<br> &ltcaption&gtMonthly savings&lt/caption&gt
+  <br>&lttr&gt
+    <br>&ltth&gtMonth&lt/th&gt
+    <br>&ltth&gtSavings&lt/th&gt
+    
+  <br>&lt/tr&gt
+  <br>&lttr&gt
+    <br>&lttd&gtJanuary&lt/td&gt
+    <br>&lttd&gt$100&lt/td&gt
+    
+  <br>&lt/tr&gt
+  <br>&lttr&gt
+    <br>&lttd&gtFebruary&lt/td&gt
+    <br>&lttd&gt$50&lt/td&gt 
+    
+  <br>&lt/tr&gt
+<br>&lt/table&gt
+</p>
+</div>
+<hr>
+<p class="p2">HTML Table Tags</p>
+<table class="versions">
+	<tr>
+		<th>Tag</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>&lttable&gt</td>
+		<td>Defines a table</td>
+	</tr>
+	<tr>
+		<td>&ltth&gt</td>
+		<td>Defines a header cell in a table</td>
+	</tr>
+	<tr>
+		<td>&lttr&gt</td>
+		<td>Defines a row in a table</td>
+	</tr>
+	<tr>
+		<td>&lttd&gt</td>
+		<td>Defines a cell in a table</td>
+	</tr>
+	<tr>
+		<td>&ltcaption&gt</td>
+		<td>Defines a table caption</td>
+	</tr>
+</table>
+<br><br>
+<a id="next" href="13.html lists.html">Next <i class="fa fa-angle-right"></i></a>
+<a id="previous" href="11.html images.html"><i class="fa fa-angle-left"></i> Previous</a>
+<br><br><br><br><br><br>
+
+</body>
+</html>
