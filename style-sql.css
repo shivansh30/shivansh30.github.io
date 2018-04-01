@@ -1,0 +1,186 @@
+body
+{background-color:white;}
+
+
+
+ul.top
+{
+list-style-type:none;
+background-color:#221f1f;
+width:100%;
+height:4.4%;
+position:fixed;
+word-spacing:30px;
+margin:0px;
+top:0px;
+left:0px;
+box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.2);
+z-index: 0;
+border-bottom: 3px solid #ed1c16;
+}
+
+li.top a
+{
+	
+text-decoration:none;
+color:white;
+font-size:25px; 
+font-family: "Century";
+}
+
+li.top a:hover{
+color:mediumseagreen;
+}
+
+li.top
+{
+display:inline;
+}
+
+ul.left
+{
+list-style-type: none;
+height: 93.5%;
+width: 16%;
+background-color:#221f1f;
+position:fixed;
+text-align: left;
+padding-top:20px;
+padding-left: 0px;
+padding-bottom: 0px;
+margin-top: 0px;
+left:0px;
+text-align: left;
+top:35px;
+
+
+line-height: 40px;
+overflow: auto;
+box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+li.left a
+{
+	text-decoration: none;
+	color:white;
+	font-size:20px;
+	display:block;
+	padding-left:10px;
+    font-family: "Century";
+}
+
+li.left a:hover
+{
+	background-color: white;
+	color:black;
+
+
+}
+
+
+lh.left
+{
+	font-size: 25px;
+	padding-left:10px;
+	font-family: "Century";
+	font-weight:bold;
+	color:white;
+}
+
+h1.heading
+{
+	margin-left: 250px;
+	margin-top: 60px;
+	font-size: 35px;
+	font-family: "Cambria";
+}
+
+div.example
+{
+	background-color: #a6a6a6;
+    margin-left: 250px;
+    padding: 20px 10px; 
+    box-shadow:0px 2px 2px 0px  rgba(0, 0, 0, 0.2);
+
+}
+
+p.eg
+{
+	margin-left: 0px;
+	background-color: white;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	font-size:20px;
+	border-left: 5px solid #ff1a1a;
+	font-family:cambria;
+	word-spacing: 20px;
+	
+}
+
+img.egs
+{
+width:1130px;
+padding-left: 5px;
+}
+
+h1.ex
+{
+	font-family: cambria;
+	margin-top: 0px;
+	font-size: 18px;
+}
+
+#next
+{background-color: #4caf50;
+	border:2px solid #4caf50;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	margin-right: 30px;
+	font-family: cambria;
+	float:right;
+	font-size: 21px;
+	white-space:nowrap;
+	transition: all 0.4s;
+
+}
+#previous
+{
+	background-color: white;
+	font-family:cambria;
+    color: black;
+    border:2px solid #555555;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	margin-left: 250px;
+	font-size:21px;
+	white-space:nowrap;
+	transition: all 0.4s;
+	float:left;
+}
+
+#next:hover
+{
+background-color:white;
+color:black;	
+border-color:#4caf50;
+}
+
+#previous:hover{
+	background-color:#221f1f;
+	color:white;
+}
+hr
+{
+	margin-left: 280px;
+	margin-right: 30px;
+      border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}

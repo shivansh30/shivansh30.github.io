@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>SQL intoduction</title>
+
+<link rel="shortcut icon" href="sql-icon.ico" />
+<link rel="stylesheet" type="text/css" href="style-sql.css">
+<link rel="stylesheet" type="text/css" href="content.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<ul class="left">
+	<lh class="left">SQL Tutorial</lh>
+	<li class="left" style="background-color: mediumseagreen;"><a href="1.sql introduction.html">SQL Introduction</a></li>
+	<li class="left"><a href="2.sql create database.html">SQL Create Database</a></li>
+	<li class="left"><a href="3.sql create table.html">SQL Create Table</a></li>
+	<li class="left"><a href="4.sql alter table.html">SQL Alter Table</a></li>
+	<li class="left"><a href="5.sql select statement.html">SQL Select Statement</a></li>
+	<li class="left"><a href="6.sql where.html">SQL Where</a></li>
+	<li class="left"><a href="7.sql insert into.html">SQL Insert Into</a></li>
+	<li class="left"><a href="8.sql update.html">SQL Update</a></li>
+	<li class="left"><a href="9.sql delete.html">SQL Delete</a></li>
+	<li class="left"><a href="10.sql functions.html">SQL Functions</a></li>
+	<li class="left"><a href="11.sql like.html">SQL Like</a></li>
+	<li class="left"><a href="12.sql inner join.html">SQL Inner Join</a></li>
+	<li class="left"><a href="13.sql left join.html">SQL Left Join</a></li>
+	<li class="left"><a href="14.sql right join.html">SQL Right Join</a></li>
+	<li class="left"><a href="15.sql constraints.html">SQL Constraints</a></li>
+    <li class="left"><a href="16.sql group by.html">SQL Group By</a></li>
+	<li class="left"><a href="17.sql string fuctions.html">SQL String Functions</a></li>
+	<li class="left"><a href="18.sql numeric functions.html">SQL Numeric Functions</a></li>
+	<li class="left"><a href="19.sql advanced functions.html">SQL Advanced Functions</a></li>
+
+</ul>
+<ul class="top">
+<li class="top"><a href="logo.png">html</a>
+<li class="top"><a href="logo.png">css</a>
+<li class="top"><a href="logo.png">sql</a>
+</ul>
+<h1 class="heading">Introduction To SQL</h1>
+<p class="p1">SQL is a standard language for storing, manipulating and retrieving data in databases.
+<br>
+Our SQL tutorial will teach you how to use SQL in: MySQL, SQL Server, MS Access, Oracle, Sybase, Informix, Postgres, and other database systems.
+</p>
+<hr>
+<p class="p2">What is SQL?</p>
+<ul class="l1"><li>SQL stands for Structured Query Language
+<li>SQL lets you access and manipulate databases
+<li>SQL is an ANSI (American National Standards Institute) standard
+	</ul>
+	<hr>
+	<p class="p2">What Can SQL do?</p>
+<ul class="l1"><li>SQL can execute queries against a database
+<li>SQL can retrieve data from a database
+<li>SQL can insert records in a database
+<li>SQL can update records in a database
+<li>SQL can delete records from a database
+<li>SQL can create new databases
+<li>SQL can create new tables in a database
+<li>SQL can create stored procedures in a database
+<li>SQL can create views in a database
+<li>SQL can set permissions on tables, procedures, and views
+</ul>
+<hr>
+<p class="p2">SQL is a Standard - BUT....</p>
+<p class="p3">Although SQL is an ANSI (American National Standards Institute) standard, there are different versions of the SQL language.
+<br><br>
+However, to be compliant with the ANSI standard, they all support at least the major commands (such as SELECT, UPDATE, DELETE, INSERT, WHERE) in a similar manner.</p>
+
+<p class="p1"><b>Note:</b> Most of the SQL database programs also have their own proprietary extensions in addition to the SQL standard!</p>
+<hr>
+<p class="p2">Using SQL in Your Web Site</p>
+<p class="p3">To build a web site that shows data from a database, you will need:</p>
+<ul class="l1">
+<li>An RDBMS database program (i.e. MS Access, SQL Server, MySQL)
+<li>To use a server-side scripting language, like PHP or ASP
+<li>to use SQL to get the data you want
+<li>To use HTML / CSS to style the page
+</ul>
+<hr>
+<p class="p2"> RDBMS</p>
+<p class="p3">RDBMS stands for Relational Database Management System.
+<br><br>
+RDBMS is the basis for SQL, and for all modern database systems such as MS SQL Server, IBM DB2, Oracle, MySQL, and Microsoft Access.
+<br><br>
+The data in RDBMS is stored in database objects called tables. A table is a collection of related data entries and it consists of columns and rows.
+<br><br>
+Look at the "students" table:
+</p>
+<div class="example">
+	<h1 class="ex">Example:</h1>
+<p class="eg">
+
+	<font color=blue>SELECT</font> * <font color=blue>FROM</font> student;
+</p>
+	<h1 class="ex">Output:</h1>
+
+<img class="egs" src="sql-pics\eg1.png">
+</div>
+<p class="p3"> Every table is broken up into smaller entities called fields. The fields in the students table consist of roll no., Name, Contact and Address. A field is a column in a table that is designed to maintain specific information about every record in the table.
+<br><br>
+A record, also called a row, is each individual entry that exists in a table. For example, there are 7 records in the above Customers table. A record is a horizontal entity in a table.
+<br><br>
+A column is a vertical entity in a table that contains all information associated with a specific field in a table.
+</p>
+<hr>
+<p class="p2"> Semicolon after SQL Statements?</p>
+<p class="p3"> Some database systems require a semicolon at the end of each SQL statement.
+<br><br>
+Semicolon is the standard way to separate each SQL statement in database systems that allow more than one SQL statement to be executed in the same call to the server.
+<br><br>
+In this tutorial, we will use semicolon at the end of each SQL statement.
+</p>
+<hr>
+<p class="p2"> Some of The Most Important SQL Commands</p>
+<ul class="l1">
+<li><b>SELECT </b>- extracts data from a database
+<li><b>UPDATE </b>- updates data in a database
+<li><b>DELETE</b> - deletes data from a database
+<li><b>INSERT INTO</b> - inserts new data into a database
+<li><b>CREATE DATABASE</b> - creates a new database
+<li><b>ALTER DATABASE</b> - modifies a database
+<li><b>CREATE TABLE </b>- creates a new table
+<li><b>ALTER TABLE </b>- modifies a table
+<li><b>DROP TABLE </b>- deletes a table
+<li><b>CREATE INDEX</b> - creates an index (search key)
+<li><b>DROP INDEX</b> - deletes an index
+</ul>
+
+<br><br>
+<a id="next" href="create database.html">Next  <i class="fa fa-angle-right"></i></a>
+<a id="previous" href="introduction.html"> <i class="fa fa-angle-left"></i> Previous</a>
+<br><br><br><br><br><br>
+
+</body>
+</html>
