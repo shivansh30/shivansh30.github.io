@@ -1,0 +1,185 @@
+<html>
+<head>
+<link rel="shortcut icon"	href="sql-icon.ico" />
+
+<title>String Functions</title>
+<link rel="stylesheet" type="text/css" href="style-sql.css">
+<link rel="stylesheet" type="text/css" href="content.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<ul class="left">
+	 <lh class="left">SQL Tutorial</lh>
+    <li class="left"><a href="1.sql introduction.html">SQL Introduction</a></li>
+    <li class="left"><a href="2.sql create database.html">SQL Create Database</a></li>
+    <li class="left"><a href="3.sql create table.html">SQL Create Table</a></li>
+    <li class="left"><a href="4.sql alter table.html">SQL Alter Table</a></li>
+    <li class="left"><a href="5.sql select statement.html">SQL Select Statement</a></li>
+    <li class="left"><a href="6.sql where.html">SQL Where</a></li>
+    <li class="left"><a href="7.sql insert into.html">SQL Insert Into</a></li>
+    <li class="left"><a href="8.sql update.html">SQL Update</a></li>
+    <li class="left"><a href="9.sql delete.html">SQL Delete</a></li>
+    <li class="left"><a href="10.sql functions.html">SQL Functions</a></li>
+    <li class="left"><a href="11.sql like.html">SQL Like</a></li>
+    <li class="left"><a href="12.sql inner join.html">SQL Inner Join</a></li>
+    <li class="left"><a href="13.sql left join.html">SQL Left Join</a></li>
+    <li class="left"><a href="14.sql right join.html">SQL Right Join</a></li>
+    <li class="left"><a href="15.sql constraints.html">SQL Constraints</a></li>
+    <li class="left"><a href="16.sql group by.html">SQL Group By</a></li>
+    <li class="left" style="background-color: mediumseagreen;"><a href="17.sql string fuctions.html">SQL String Functions</a></li>
+    <li class="left"><a href="18.sql numeric functions.html">SQL Numeric Functions</a></li>
+    <li class="left"><a href="19.sql advanced functions.html">SQL Advanced Functions</a></li>
+</ul>
+</ul>
+<ul class="top">
+<li class="top"><a href="1.html Introduction.html">html</a>
+<li class="top"><a href="1.css introduction.html">css</a>
+<li class="top"><a href="1.sql introduction.html">sql</a>
+</ul>
+<h1 class="heading">SQL String Functions</h1>
+<table class="versions">
+	<tr>
+		<th>
+			Function
+		</th>
+		<th>
+			Description
+		</th>
+	</tr>
+	<tr>
+		<td>ASCII	<td>Returns the number code that represents the specific character
+	</tr>
+	<tr>
+	<td>CHAR_LENGTH	<td>Returns the length of the specified string (in characters)
+	</tr>
+	<tr>
+		<td>CHARACTER_LENGTH	<td>Returns the length of the specified string (in characters)
+	</tr>
+	<tr>
+<td>CONCAT	<td>Concatenates two or more expressions together
+		
+	</tr>
+	<tr>
+<td>CONCAT_WS	<td>Concatenates two or more expressions together and adds a separator between them
+		
+	</tr>
+	<tr>
+<td>FIELD	<td>Returns the position of a value in a list of values
+		
+	</tr>
+	<tr>
+<td>FIND_IN_SET	<td>Returns the position of a string in a string list
+		
+	</tr>
+	<tr>
+<td>FORMAT	<td>Formats a number as a format of "#,###.##", rounding it to a certain number of decimal places
+		
+	</tr>
+	<tr>
+<td>INS     <td>Inserts a substring into a string at a specified position for a certain number of characters
+		
+	</tr>
+	<tr>
+<td>INSTR	<td>Returns the position of the first occurrence of a string in another string
+		
+	</tr>
+	<tr>
+<td>LCASE	<td>Converts a string to lower-case
+		
+	</tr>
+	<tr>
+<td>LEFT	<td>Extracts a substring from a string (starting from left)
+		
+	</tr>
+	<tr>
+<td>LENGTH	<td>Returns the length of the specified string (in bytes)
+		
+	</tr>
+	<tr>
+<td>LOCATE	<td>Returns the position of the first occurrence of a substring in a string
+		
+	</tr>
+	<tr>
+<td>LOWER	<td>Converts a string to lower-case
+		
+	</tr>
+	<tr>
+<td>LPAD	<td>Returns a string that is left-padded with a specified string to a certain length
+		
+	</tr>
+	<tr>
+<td>LTRIM	<td>Removes leading spaces from a string
+		
+	</tr>
+	<tr>
+<td>MID	<td>Extracts a substring from a string (starting at any position)
+		
+	</tr>
+	<tr>
+<td>POSITION	<td>Returns the position of the first occurrence of a substring in a string
+		
+	</tr>
+	<tr>
+<td>REPEAT	<td>Repeats a string a specified number of times
+		
+	</tr>
+	<tr>
+<td>REPLACE	<td>Replaces all occurrences of a specified string
+		
+	</tr>
+	<tr>
+<td>REVERSE	<td>Reverses a string and returns the result
+		
+	</tr>
+	<tr>
+<td>RIGHT	<td>Extracts a substring from a string (starting from right)
+		
+	</tr>
+	<tr>
+<td>RPAD	<td>Returns a string that is right-padded with a specified string to a certain length
+		
+	</tr>
+	<tr>
+<td>RTRIM	<td>Removes trailing spaces from a string
+		
+	</tr>
+	<tr>
+<td>SPACE	<td>Returns a string with a specified number of spaces
+		
+	</tr>
+	<tr>
+<td>STRCMP	<td>Tests whether two strings are the same
+		
+	</tr>
+	<tr>
+<td>SUBSTR	<td>Extracts a substring from a string (starting at any position)
+		
+	</tr>
+	<tr>
+<td>SUBSTRING	<td>Extracts a substring from a string (starting at any position)
+		
+	</tr>
+	<tr>
+<td>SUBSTRING_INDEX	<td>Returns the substring of string before number of occurrences of delimiter
+		
+	</tr>
+	<tr>
+<td>TRIM	<td>Removes leading and trailing spaces from a string
+		
+	</tr>
+	<tr>
+<td>UCASE	<td>Converts a string to upper-case
+		
+	</tr>
+	<tr>
+<td>UPPER	<td>Converts a string to upper-case
+		
+	</tr>
+</table>
+<br><br>
+<a id="next" href="18.sql numeric functions.html">Next <i class="fa fa-angle-right"></i></a>
+<a id="previous" href="16.sql group by.html"><i class="fa fa-angle-left"></i> Previous</a>
+<br><br><br><br><br><br>
+
+</body>
+</html>

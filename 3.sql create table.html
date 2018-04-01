@@ -1,0 +1,109 @@
+<html>
+<head>
+<link rel="shortcut icon"	href="sql-icon.ico" />
+	
+<title>create table</title>
+<link rel="stylesheet" type="text/css" href="style-sql.css">
+<link rel="stylesheet" type="text/css" href="content.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<ul class="left">
+	<lh class="left">SQL Tutorial</lh>
+	<li class="left"><a href="1.sql introduction.html">SQL Introduction</a></li>
+	<li class="left"><a href="2.sql create database.html">SQL Create Database</a></li>
+	<li class="left" style="background-color: mediumseagreen;"><a href="3.sql create table.html">SQL Create Table</a></li>
+	<li class="left"><a href="4.sql alter table.html">SQL Alter Table</a></li>
+	<li class="left"><a href="5.sql select statement.html">SQL Select Statement</a></li>
+	<li class="left"><a href="6.sql where.html">SQL Where</a></li>
+	<li class="left"><a href="7.sql insert into.html">SQL Insert Into</a></li>
+	<li class="left"><a href="8.sql update.html">SQL Update</a></li>
+	<li class="left"><a href="9.sql delete.html">SQL Delete</a></li>
+	<li class="left"><a href="10.sql functions.html">SQL Functions</a></li>
+	<li class="left"><a href="11.sql like.html">SQL Like</a></li>
+	<li class="left"><a href="12.sql inner join.html">SQL Inner Join</a></li>
+	<li class="left"><a href="13.sql left join.html">SQL Left Join</a></li>
+	<li class="left"><a href="14.sql right join.html">SQL Right Join</a></li>
+	<li class="left"><a href="15.sql constraints.html">SQL Constraints</a></li>
+    <li class="left"><a href="16.sql group by.html">SQL Group By</a></li>
+	<li class="left"><a href="17.sql string fuctions.html">SQL String Functions</a></li>
+	<li class="left"><a href="18.sql numeric functions.html">SQL Numeric Functions</a></li>
+	<li class="left"><a href="19.sql advanced functions.html">SQL Advanced Functions</a></li>
+
+
+</ul>
+<ul class="top">
+<li class="top"><a href="1.html Introduction.html">html</a>
+<li class="top"><a href="1.css introduction.html">css</a>
+<li class="top"><a href="1.sql introduction.html">sql</a>
+</ul>
+<h1 class="heading">SQL Create Table Statement</h1>
+<p class="p3">The CREATE TABLE statement is used to create a new table in a database.</p>
+<p class="p2">Syntax</p>
+<p class="p1" style="word-spacing: 20px;"><font color=blue>CREATE TABLE</font> table_name ( <br>
+column1 datatype,<br>
+column2 datatype,<br>
+column3 datatype,<br>
+....<br>
+);
+</p>
+<p class="p3">The column parameters specify the names of the columns of the table.
+<br><br>
+The datatype parameter specifies the type of data the column can hold (e.g. varchar, integer, date, etc.).</p>
+<hr>
+<p class="p2">SQL CREATE TABLE Example</p>
+<p class="p3"> The following example creates a table called "Persons" that contains five columns: PersonID, LastName, FirstName, Address, and City:</p>
+<div class="example">
+	<h1 class="ex">Example:</h1>
+<p class="eg">
+<font color=blue>CREATE TABLE</font> Persons (<br>
+    PersonID int,<br>
+    LastName varchar(255),<br>
+    FirstName varchar(255),<br>
+    Address varchar(255),<br>
+    City varchar(255) <br>
+);
+	
+</p>
+</div>
+<p class="p3"> The PersonID column is of type int and will hold an integer.
+<br><br>
+The LastName, FirstName, Address, and City columns are of type varchar and will hold characters, and the maximum length for these fields is 255 characters.
+<br><br>
+The empty "Persons" table will now look like this:
+</p>
+<div class="example">
+<h1 class="ex">Output:</h1>
+
+<img class="egs" src="sql-pics\eg2.png">
+</div>
+<hr>
+<h1 class="heading">SQL Drop Table Statement</h1>
+<p class="p3">The DROP TABLE statement is used to drop an existing table in a database.</p>
+<p class="p2">Syntax</p>
+<p class="p1" style="word-spacing: 20px;"><font color=blue>DROP TABLE</font> table_name;
+	</p>
+	<p class="p1"><b>Note:</b> Be careful before dropping a table. Deleting a table will result in loss of complete information stored in the table!</p>
+	<hr>
+<p class="p2">SQL DROP TABLE Example</p>
+<p class="p3">The following SQL statement drops the existing table "Persons":</p>
+<div class="example">
+	<h1 class="ex">Example:</h1>
+<p class="eg">
+<font color=blue>Drop TABLE</font> Persons;
+    </p>
+</div>
+<hr>
+<h1 class="heading">SQL Truncate Table Statement</h1>
+<p class="p3">The TRUNCATE TABLE statement is used to delete the data inside a table, but not the table itself.
+</p>
+<p class="p2"> Syntax</p>
+<p class="p1" style="word-spacing: 20px;"><font color=blue>TRUNCATE TABLE</font> table_name;
+</p>
+<br><br>
+<a id="next" href="4.sql alter table.html">Next  <i class="fa fa-angle-right"></i></a>
+<a id="previous" href="2.sql create database.html"> <i class="fa fa-angle-left"></i> Previous</a>
+<br><br><br><br><br><br>
+
+</body>
+</html>

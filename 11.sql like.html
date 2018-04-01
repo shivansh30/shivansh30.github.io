@@ -1,0 +1,137 @@
+<html>
+<head>
+<link rel="shortcut icon"	href="sql-icon.ico" />
+
+<title>Like</title>
+<link rel="stylesheet" type="text/css" href="style-sql.css">
+<link rel="stylesheet" type="text/css" href="content.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<ul class="left">
+	<lh class="left">SQL Tutorial</lh>
+	<li class="left"><a href="1.sql introduction.html">SQL Introduction</a></li>
+	<li class="left"><a href="2.sql create database.html">SQL Create Database</a></li>
+	<li class="left"><a href="3.sql create table.html">SQL Create Table</a></li>
+	<li class="left"><a href="4.sql alter table.html">SQL Alter Table</a></li>
+	<li class="left"><a href="5.sql select statement.html">SQL Select Statement</a></li>
+	<li class="left"><a href="6.sql where.html">SQL Where</a></li>
+	<li class="left"><a href="7.sql insert into.html">SQL Insert Into</a></li>
+	<li class="left"><a href="8.sql update.html">SQL Update</a></li>
+	<li class="left"><a href="9.sql delete.html">SQL Delete</a></li>
+	<li class="left"><a href="10.sql functions.html">SQL Functions</a></li>
+	<li class="left" style="background-color: mediumseagreen;"><a href="11.sql like.html">SQL Like</a></li>
+	<li class="left"><a href="12.sql inner join.html">SQL Inner Join</a></li>
+	<li class="left"><a href="13.sql left join.html">SQL Left Join</a></li>
+	<li class="left"><a href="14.sql right join.html">SQL Right Join</a></li>
+	<li class="left"><a href="15.sql constraints.html">SQL Constraints</a></li>
+    <li class="left"><a href="16.sql group by.html">SQL Group By</a></li>
+	<li class="left"><a href="17.sql string fuctions.html">SQL String Functions</a></li>
+	<li class="left"><a href="18.sql numeric functions.html">SQL Numeric Functions</a></li>
+	<li class="left"><a href="19.sql advanced functions.html">SQL Advanced Functions</a></li>
+
+
+</ul>
+<ul class="top">
+<li class="top"><a href="1.html Introduction.html">html</a>
+<li class="top"><a href="1.css introduction.html">css</a>
+<li class="top"><a href="1.sql introduction.html">sql</a>
+</ul>
+<h1 class="heading">SQL Like Operator</h1>
+<p class="p2">The SQL LIKE Operator</p>	
+<p class="p3">The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.
+<br><br>
+There are two wildcards used in conjunction with the LIKE operator:</p>
+<ul class="l1">
+	<li>% - The percent sign represents zero, one, or multiple characters
+</li>
+	<li>_ - The underscore represents a single character</li>
+</ul>
+<p class="p3">The percent sign and the underscore can also be used in combinations!</p>
+<hr>
+<p class="p2">LIKE Syntax</p>
+<p class="p1" style="word-spacing: 20px;"><font color="blue"> SELECT</font> column1, column2, ...<br>
+<font color="blue"> FROM</font> table_name <br>
+<font color="blue"> WHERE</font> columnN LIKE pattern;</p>
+<p class="p1"><b>Tip:</b> You can also combine any number of conditions using AND or OR operators.</p>
+<hr>
+<p class="p3">Here are some examples showing different LIKE operators with '%' and '_' wildcards:</p>
+<table class="versions">
+	<tr>
+		<th>LIKE Operator</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>
+			WHERE CustomerName LIKE 'a%'
+		</td>
+		<td>
+			Finds any values that starts with "a"
+		</td>
+	</tr>
+	<tr>
+		<td>
+			WHERE CustomerName LIKE '%a'
+		</td>
+		<td>
+			Finds any values that ends with "a"
+		</td>
+	</tr>
+	<tr>
+		<td>
+			WHERE CustomerName LIKE '%or%'
+		</td>
+		<td>
+			Finds any values that have "or" in any position
+		</td>
+	</tr>
+	<tr>
+		<td>
+			WHERE CustomerName LIKE '_r%'
+		</td>
+		<td>
+			Finds any values that have "r" in the second position
+		</td>
+	</tr>
+	<tr>
+		<td>
+			WHERE CustomerName LIKE 'a_%_%'
+		</td>
+		<td>
+			Finds any values that starts with "a" and are at least 3 characters in length
+		</td>
+	</tr>
+	<tr>
+		<td>
+			WHERE ContactName LIKE 'a%o'
+		</td>
+		<td>
+			Finds any values that starts with "a" and ends with "o"
+		</td>
+	</tr>
+</table>
+<hr>
+<p class="p2">Demo Database</p>
+<p class="p3">Below is a selection from the "students" table in the sample database:</p>
+<img id="chrome" src="sql-pics\eg1.png">
+<hr>
+<p class="p2">SQL LIKE Examples</p>
+<p class="p3">The following SQL statement selects al studentss with a Name starting with "p":</p>
+<div class="example">
+	<h1 class="ex">Example:</h1>
+	<p class="eg">
+	<font color="blue">	SELECT</font> * <font color="blue">FROM</font> Customers <br>
+<font color="blue">WHERE</font> CustomerName LIKE 'p%';
+	</p>
+	<h1 class="ex">Output:</h1>
+	<img class="egs" src="sql-pics/eg21.bmp">
+</div>
+
+
+<br><br>
+<a id="next" href="12.sql inner join.html">Next <i class="fa fa-angle-right"></i></a>
+<a id="previous" href="10.sql functions.html"><i class="fa fa-angle-left"></i> Previous</a>
+<br><br><br><br><br><br>
+
+</body>
+</html>

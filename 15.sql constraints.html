@@ -1,0 +1,134 @@
+<html>
+<head>
+<link rel="shortcut icon"	href="sql-icon.ico" />
+
+<title>Constraints</title>
+<link rel="stylesheet" type="text/css" href="style-sql.css">
+<link rel="stylesheet" type="text/css" href="content.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<ul class="left">
+<lh class="left">SQL Tutorial</lh>
+    <li class="left"><a href="1.sql introduction.html">SQL Introduction</a></li>
+    <li class="left"><a href="2.sql create database.html">SQL Create Database</a></li>
+    <li class="left"><a href="3.sql create table.html">SQL Create Table</a></li>
+    <li class="left"><a href="4.sql alter table.html">SQL Alter Table</a></li>
+    <li class="left"><a href="5.sql select statement.html">SQL Select Statement</a></li>
+    <li class="left"><a href="6.sql where.html">SQL Where</a></li>
+    <li class="left"><a href="7.sql insert into.html">SQL Insert Into</a></li>
+    <li class="left"><a href="8.sql update.html">SQL Update</a></li>
+    <li class="left"><a href="9.sql delete.html">SQL Delete</a></li>
+    <li class="left"><a href="10.sql functions.html">SQL Functions</a></li>
+    <li class="left"><a href="11.sql like.html">SQL Like</a></li>
+    <li class="left"><a href="12.sql inner join.html">SQL Inner Join</a></li>
+    <li class="left"><a href="13.sql left join.html">SQL Left Join</a></li>
+    <li class="left"><a href="14.sql right join.html">SQL Right Join</a></li>
+    <li class="left" style="background-color: mediumseagreen;"><a href="15.sql constraints.html">SQL Constraints</a></li>
+    <li class="left"><a href="16.sql group by.html">SQL Group By</a></li>
+<li class="left"><a href="17.sql string functions.html">SQL String Functions</a></li>
+    <li class="left"><a href="18.sql numeric functions.html">SQL Numeric Functions</a></li>
+    <li class="left"><a href="19.sql advanced functions.html">SQL Advanced Functions</a></li>
+
+</ul>
+<ul class="top">
+<li class="top"><a href="1.html Introduction.html">html</a>
+<li class="top"><a href="1.css introduction.html">css</a>
+<li class="top"><a href="1.sql introduction.html">sql</a>
+</ul>
+<h1 class="heading">SQL Constraints</h1>
+<p class="p3">SQL constraints are used to specify rules for data in a table.
+
+</p>
+<hr>
+<p class="p2">SQL Create Constraints</p>
+<p class="p3">
+Constraints can be specified when the table is created with the CREATE TABLE statement, or after the table is created with the ALTER TABLE statement.</p>
+<p class="p1" style="word-spacing: 20px;">
+<font color="blue">	CREATE TABLE</font> table_name (
+    column1 datatype <font color="blue">constraint</font>,<br>
+    column2 datatype <font color="blue">constraint</font>,<br>
+    column3 datatype <font color="blue">constraint</font>,<br>
+    ....<br>
+);
+</p>
+<hr>
+<p class="p2">SQL Constraints</p>
+<p class="p3">SQL constraints are used to specify rules for the data in a table.
+<br><br>
+Constraints are used to limit the type of data that can go into a table. This ensures the accuracy and reliability of the data in the table. If there is any violation between the constraint and the data action, the action is aborted.
+<br><br>
+Constraints can be column level or table level. Column level constraints apply to a column, and table level constraints apply to the whole table.
+<br><br>
+The following constraints are commonly used in SQL:</p>
+<ul class="l1">
+	<li><b>NOT NULL</b> - Ensures that a column cannot have a NULL value
+<li><b>UNIQUE</b> - Ensures that all values in a column are different
+<li><b>PRIMARY KEY</b> - A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a table
+<li><b>FOREIGN KEY</b> - Uniquely identifies a row/record in another table
+<li><b>CHECK</b> - Ensures that all values in a column satisfies a specific condition
+<li><b>DEFAULT</b> - Sets a default value for a column when no value is specified
+<li><b>INDEX</b> - Used to create and retrieve data from the database very quickly
+
+</ul>
+<hr>
+<p class="p2">SQL NOT NULL Constraint</p>
+<p class="p3">By default, a column can hold NULL values.
+<br><br>
+The NOT NULL constraint enforces a column to NOT accept NULL values.
+<br><br>
+This enforces a field to always contain a value, which means that you cannot insert a new record, or update a record without adding a value to this field.
+<br><br>
+The following SQL ensures that the "ID", "LastName", and "FirstName" columns will NOT accept NULL values:</p>
+<p class="p1" style="word-spacing: 20px;">
+<font color="blue">	CREATE TABLE</font> Persons (<br>
+    ID int <font color="blue">NOT NULL</font>,<br>
+    LastName varchar(255) <font color="blue">NOT NULL</font>,<br>
+    FirstName varchar(255) <font color="blue">NOT NULL</font>,<br>
+    Age int <br>
+);
+</p>
+<hr>
+<p class="p2">SQL UNIQUE Constraint</p>
+<p class="p3">The UNIQUE constraint ensures that all values in a column are different.
+<br>
+Both the UNIQUE and PRIMARY KEY constraints provide a guarantee for uniqueness for a column or set of columns.
+<br>
+A PRIMARY KEY constraint automatically has a UNIQUE constraint.
+<br>
+However, you can have many UNIQUE constraints per table, but only one PRIMARY KEY constraint per table. <br><br>
+The following SQL creates a UNIQUE constraint on the "ID" column when the "Persons" table is created:</p>
+<p class="p1" style="word-spacing: 20px;">
+	<font color="blue">	CREATE TABLE</font> Persons (<br>
+    ID int <font color="blue">NOT NULL</font>,<br>
+    LastName varchar(255) <font color="blue">NOT NULL</font>,<br>
+    FirstName varchar(255) <font color="blue">NOT NULL</font>,<br>
+    Age int <br>
+    <font color="blue">UNIQUE</font> (ID)<br>
+    );
+</p>
+<hr>
+<p class="p2">SQL PRIMARY KEY Constraint</p>
+<p class="p3">The PRIMARY KEY constraint uniquely identifies each record in a database table.
+<br><br>
+Primary keys must contain UNIQUE values, and cannot contain NULL values.
+<br><br>
+A table can have only one primary key, which may consist of single or multiple fields.
+<br><br>
+The following SQL creates a PRIMARY KEY on the "ID" column when the "Persons" table is created:</p>
+<p class="p1" style="word-spacing: 20px;">
+	<font color="blue">	CREATE TABLE</font> Persons (<br>
+    ID int <font color="blue">NOT NULL</font>,<br>
+    LastName varchar(255) <font color="blue">NOT NULL</font>,<br>
+    FirstName varchar(255) <font color="blue">NOT NULL</font>,<br>
+    Age int <br>
+    <font color="blue">PRIMARY KEY</font> (ID)<br>
+    );
+</p>
+<br><br>
+<a id="next" href="16.sql group by.html">Next <i class="fa fa-angle-right"></i></a>
+<a id="previous" href="14.sql right join.html"><i class="fa fa-angle-left"></i> Previous</a>
+<br><br><br><br><br><br>
+
+</body>
+</html>
