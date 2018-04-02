@@ -1,0 +1,113 @@
+
+<html>
+<head>
+<link rel="shortcut icon" href="css-icon.ico" />
+<title>Counters</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="content.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<ul class="left">
+	<lh class="left">CSS Tutorial</lh>
+	<li class="left"><a href="1.css introduction.html">CSS Introduction</a></li>
+	<li class="left"><a href="2.css how to use.html">CSS How To Use</a></li> 
+	<li class="left"><a href="3.css borders.html">CSS Borders</a></li> 
+	<li class="left"><a href="4.css backgrounds.html">CSS Backgrounds</a></li> 
+	<li class="left"><a href="5.css box model.html">CSS Box Model</a></li> 
+	<li class="left"><a href="6.css outline.html">CSS Outline</a></li> 
+	<li class="left"><a href="7.css margins.html">CSS Margins</a></li> 
+	<li class="left"><a href="8.css padding.html">CSS Padding</a></li> 
+	<li class="left"><a href="9.css height.html">CSS Height And Width</a></li>
+	<li class="left"><a href="10.css colors.html">CSS Colors</a></li> 
+    <li class="left"><a href="11.css lists.html">CSS Lists</a></li> 
+    <li class="left"><a href="12.css fonts.html">CSS Fonts</a></li> 
+	<li class="left"><a href="13.css tables.html">CSS Tables</a></li> 
+	<li class="left"><a href="14.css layout.html">CSS Layout</a></li> 
+	<li class="left"><a href="15.css opacity.html">CSS Opacity</a></li> 
+	<li class="left"><a href="16.css navigation bar.html">CSS Navigation Bar</a></li> 
+	<li class="left"><a href="17.css sprites.html">CSS Sprites</a></li> 
+	<li class="left" style="background-color: mediumseagreen;"><a href="18.css counters.html">CSS Counters</a></li> 
+	<li class="left"><a href="19.css website layout.html">CSS Website Layout</a></li> 
+	<li class="left"><a href="20.css rounded corners.html">CSS Rounded Corners</a></li> 
+ 
+</ul>
+<ul class="top">
+<li class="top"><a href="1.html Introduction.html">html</a>
+<li class="top"><a href="1.css introduction.html">css</a>
+<li class="top"><a href="1.sql introduction.html">sql</a>
+</ul>
+<h1 class="heading">CSS Counters</h1>
+<p class=p3><img src="css-pics\pp39.bmp"></p><hr>
+<p class=p2>Automatic Numbering With Counters</p>
+<p class=p3>CSS counters are like "variables". The variable values can be incremented by CSS rules (which will track how many times they are used).<br>
+To work with CSS counters we will use the following properties:</p>
+<ul class=l1>
+<li>counter-reset --- Creates or resets a counter
+<li>counter-increment --- Increments a counter value
+<li>content --- Inserts generated content
+<li>counter or counters function - Adds the value of a counter to an element</ul>
+<p class=p3>To use a CSS counter, it must first be created with counter-reset.</p>
+<p class=p3>The following example creates a counter for the page (in the body selector), then increments the counter value for <br>
+each &lth2&gt element and adds "Section &ltvalue of the counter&gt:" to the beginning of each &lth2&gt element:</p><hr>
+<p class=p2>Nesting Counters</p>
+<p class=p3>The following example creates one counter for the page (section) <br>
+and one counter for each &lth1&gt element (subsection). The "section" counter will be counted for each &lth1&gt element with "Section &ltvalue of the section counter&gt.", and the <br>
+"subsection" counter will be counted for each &lth2&lt element with "&ltvalue of the section counter&gt.<br>
+&ltvalue of the subsection counter&gt":</p>
+<p class=p2>Example</p>
+<p class=p1>
+body {<br>
+    counter-reset: section;<br>
+}<br>
+
+h1 {<br>
+    counter-reset: subsection;<br>
+}<br>
+
+h1::before {<br>
+    counter-increment: section;<br>
+    content: "Section " counter(section) ". ";<br>
+}<br>
+
+h2::before {<br>
+    counter-increment: subsection;<br>
+    content: counter(section) "." counter(subsection) " ";<br>
+}<br>
+</p>
+<p class=p3><img src="css-pics\pp40.bmp"></p><hr>
+<p class=p3>A counter can also be useful to make outlined lists because a new instance of a counter is automatically created in child <br>
+elements. Here we use the counters() function to insert a string between different levels of nested counters:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+
+
+<a id="next" href="19.css website layout.html">Next <i class="fa fa-angle-right"></i></a>
+<a id="previous" href="17.css sprites.html"><i class="fa fa-angle-left"></i> Previous</a>
+<br><br><br><br><br><br>
+
+</body>
+</html>
