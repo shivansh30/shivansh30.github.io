@@ -1,0 +1,118 @@
+<html>
+<head>
+<link rel="shortcut icon" href="css-icon.ico" />
+	
+<title>Borders</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="content.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<ul class="left">
+	<lh class="left">CSS Tutorial</lh>
+	<li class="left"><a href="1.css introduction.html">CSS Introduction</a></li>
+	<li class="left"><a href="2.css how to use.html">CSS How To Use</a></li> 
+	<li class="left" style="background-color: mediumseagreen;"><a href="3.css borders.html">CSS Borders</a></li> 
+	<li class="left"><a href="4.css backgrounds.html">CSS Backgrounds</a></li> 
+	<li class="left"><a href="5.css box model.html">CSS Box Model</a></li> 
+	<li class="left"><a href="6.css outline.html">CSS Outline</a></li> 
+	<li class="left"><a href="7.css margins.html">CSS Margins</a></li> 
+	<li class="left"><a href="8.css padding.html">CSS Padding</a></li> 
+	<li class="left"><a href="9.css height.html">CSS Height And Width</a></li>
+	<li class="left"><a href="10.css colors.html">CSS Colors</a></li> 
+    <li class="left"><a href="11.css lists.html">CSS Lists</a></li> 
+    <li class="left"><a href="12.css fonts.html">CSS Fonts</a></li> 
+	<li class="left"><a href="13.css tables.html">CSS Tables</a></li> 
+	<li class="left"><a href="14.css layout.html">CSS Layout</a></li> 
+	<li class="left"><a href="15.css opacity.html">CSS Opacity</a></li> 
+	<li class="left"><a href="16.css navigation bar.html">CSS Navigation Bar</a></li> 
+	<li class="left"><a href="17.css sprites.html">CSS Sprites</a></li> 
+	<li class="left"><a href="18.css counters.html">CSS Counters</a></li> 
+	<li class="left"><a href="19.css website layout.html">CSS Website Layout</a></li> 
+	<li class="left"><a href="20.css rounded corners.html">CSS Rounded Corners</a></li> 
+ 
+</ul>
+<ul class="top">
+<li class="top"><a href="1.html Introduction.html">html</a>
+<li class="top"><a href="1.css introduction.html">css</a>
+<li class="top"><a href="1.sql introduction.html">sql</a>
+</ul>
+<h1 class="heading">CSS Borders</h1>
+
+<p class=p2>CSS Border Properties</p>
+<p class=p3>The CSS border properties allow you to specify the style, width, and color of an element's border.</p>
+<p class=p3 style="border-style:solid;">I have borders on all sides.</p>
+<p class=p3 style="border-style:dotted;">I have dotted border on all side</p>
+<p class=p3 style="border-style:inset;">I have inset border on all side.</p>
+<p class=p2>Border Style</p>
+<p class=p1>The border-style property specifies what kind of border to display.<br>
+
+The following values are allowed:<br>
+
+dotted - Defines a dotted border<br>
+dashed - Defines a dashed border<br>
+solid - Defines a solid border<br>
+double - Defines a double border<br>
+groove - Defines a 3D grooved border. The effect depends on the border-color value<br>
+ridge - Defines a 3D ridged border. The effect depends on the border-color value<br>
+inset - Defines a 3D inset border. The effect depends on the border-color value<br>
+outset - Defines a 3D outset border. The effect depends on the border-color value<br>
+none - Defines no border<br>
+hidden - Defines a hidden border<br>
+The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border).</p>
+<p class=p2>Example</p>
+<p class=p1>p.dotted {border-style: dotted;}<br>
+p.dashed {border-style: dashed;}<br>
+p.solid {border-style: solid;}<br>
+p.double {border-style: double;}<br> 
+p.groove {border-style: groove;}<br>
+p.ridge {border-style: ridge;}<br>
+p.inset {border-style: inset;}<br>
+p.outset {border-style: outset;}<br>
+p.none {border-style: none;}<br>
+p.hidden {border-style: hidden;}<br>
+p.mix {border-style: dotted dashed solid double;}</p>
+<p class=p2>Result:</p>
+<p class=p3 style="border-style:dotted;">A dotted border.</p>
+<p class=p3 style="border-style:dashed;">A dashed border</p>
+<p class=p3 style="border-style:double;"> A double border</p>
+<p class=p3 style="border-style:groove;">A groove border</p>
+<p class=p3 style="border-style:ridge;">A ridge border</p>
+<p class=p2>Border Width</p>
+<p class=p3>The border-width property specifies the width of the four borders.<br>
+
+The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick.<br>
+
+The border-width property can have from one to four values (for the top border, right border, bottom border, and the left border).</p>
+<p class=p2>Example</p>
+<p class=p1>p.one {<br>
+    border-style: solid;<br>
+    border-width: 5px;<br>
+	}
+	<p class=p2>result</p>
+	<p class=p3 style="border-style:solid; border-width:5px;">border-width:5px</p>
+	<p class=p2>Border Color</p>
+	<p class=p3>The border-color property is used to set the color of the four borders.<br>
+
+The color can be set by:<br>
+
+name - specify a color name, like "red"<br>
+Hex - specify a hex value, like "#ff0000"<br>
+RGB - specify a RGB value, like "rgb(255,0,0)"<br>
+transparent<br>
+The border-color property can have from one to four values (for the top border, right border, bottom border, and the left border). <br>
+
+If border-color is not set, it inherits the color of the element.</p>
+<p class=p1>p.one {<br>
+    border-style: solid;<br>
+    border-color: red;<br>
+}<br>
+<p class =p3 style="border-style:solid; border-color:red;">Red border</p>
+</p>
+</p>
+<br><br>
+<a id="next" href="4.css backgrounds.html">Next <i class="fa fa-angle-right"></i></a>
+<a id="previous" href="2.css how to use.html"><i class="fa fa-angle-left"></i> Previous</a>
+<br><br><br><br><br><br>
+</body>
+</html>

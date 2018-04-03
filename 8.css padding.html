@@ -1,0 +1,127 @@
+
+<html>
+<head>
+<link rel="shortcut icon" href="css-icon.ico" />
+<title>Padding</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="content.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<ul class="left">
+	<lh class="left">CSS Tutorial</lh>
+	<li class="left"><a href="1.css introduction.html">CSS Introduction</a></li>
+	<li class="left"><a href="2.css how to use.html">CSS How To Use</a></li> 
+	<li class="left"><a href="3.css borders.html">CSS Borders</a></li> 
+	<li class="left"><a href="4.css backgrounds.html">CSS Backgrounds</a></li> 
+	<li class="left"><a href="5.css box model.html">CSS Box Model</a></li> 
+	<li class="left"><a href="6.css outline.html">CSS Outline</a></li> 
+	<li class="left"><a href="7.css margins.html">CSS Margins</a></li> 
+	<li class="left" style="background-color: mediumseagreen;"><a href="8.css padding.html">CSS Padding</a></li> 
+	<li class="left"><a href="9.css height.html">CSS Height And Width</a></li>
+	<li class="left"><a href="10.css colors.html">CSS Colors</a></li> 
+    <li class="left"><a href="11.css lists.html">CSS Lists</a></li> 
+    <li class="left"><a href="12.css fonts.html">CSS Fonts</a></li> 
+	<li class="left"><a href="13.css tables.html">CSS Tables</a></li> 
+	<li class="left"><a href="14.css layout.html">CSS Layout</a></li> 
+	<li class="left"><a href="15.css opacity.html">CSS Opacity</a></li> 
+	<li class="left"><a href="16.css navigation bar.html">CSS Navigation Bar</a></li> 
+	<li class="left"><a href="17.css sprites.html">CSS Sprites</a></li> 
+	<li class="left"><a href="18.css counters.html">CSS Counters</a></li> 
+	<li class="left"><a href="19.css website layout.html">CSS Website Layout</a></li> 
+	<li class="left"><a href="20.css rounded corners.html">CSS Rounded Corners</a></li> 
+ 
+</ul>
+<ul class="top">
+<li class="top"><a href="1.html Introduction.html">html</a>
+<li class="top"><a href="1.css introduction.html">css</a>
+<li class="top"><a href="1.sql introduction.html">sql</a>
+</ul>
+<h1 class="heading">CSS Padding</h1>
+<p class=p2>CSS Padding</p>
+<p class=p3>The CSS padding properties are used to generate space around an element's content, inside of any defined borders.<br>
+
+With CSS, you have full control over the padding. There are properties for setting the padding for each side of an<br>
+ element (top, right, bottom, and left).</p><hr>
+ <p class=p2>Padding - Individual Sides</p>
+ <p class=p3>CSS has properties for specifying the padding for each side of an element:</p>
+ <ul class=l1>
+<li> padding-top
+<li>padding-right
+<li>padding-bottom
+<li>padding-left
+ </ul>
+ <p class=p3>All the padding properties can have the following values:</p>
+ <ul class=l1>
+ <li>length - specifies a padding in px, pt, cm, etc.
+<li>% - specifies a padding in % of the width of the containing element
+<li>inherit - specifies that the padding should be inherited from the parent element
+ </ul>
+ <p class=p3>Note: Negative values are not allowed.<br>
+
+The following example sets different padding for all four sides of a &ltdiv&gt element: </p><hr>
+<p class=p2>Example</p>
+<p class=p1>
+div {<br>
+    padding-top: 50px;<br>
+    padding-right: 30px;<br>
+    padding-bottom: 50px;<br>
+    padding-left: 80px;<br>
+}<br>
+</p>
+<p class=p2>result</p>
+<p class=p3><img src="css-pics\pp6.bmp"></p>
+<p class=p2>Padding - Shorthand Property</p>
+<p class=p3>To shorten the code, it is possible to specify all the padding properties in one property.<br>
+
+The padding property is a shorthand property for the following individual padding properties:</p>
+<ul class=l1>
+<li>padding-top
+<li>padding-right
+<li>padding-bottom
+<li>padding-left
+</ul>
+<p class=p3>So, here is how it works:<br>
+
+If the padding property has four values:<br>
+</p>
+<ul class=l1>
+<h2><li>padding: 25px 50px 75px 100px;</h2>
+<li>top padding is 25px
+<li>right padding is 50px
+<li>bottom padding is 75px
+<li>left padding is 100px
+</ul><hr>
+<p class=p2>Padding and Element Width</p>
+<p class=p3>The CSS width property specifies the width of the element's content area. The content area is the portion inside the<br>
+ padding, border, and margin of an element (the box model).<br>
+
+So, if an element has a specified width, the padding added to that element will be added to the total width of the <br>
+element. This is often an undesirable result.<br>
+
+In the following example, the &ltdiv&gt element is given a width of 300px. However, the actual rendered width of the<br>
+ &ltdiv&gt element will be 350px (300px + 25px of left padding + 25px of right padding):</p><hr>
+ <p class=p2>Example</p>
+ <p class=p1>
+ div {<br>
+    width: 300px;<br>
+    padding: 25px;<br>
+}<br>
+</p>
+<p class=p2>result</p>
+<p class=p3><img src="css-pics\pp7.bmp"></p><hr>
+<p class=p2>All CSS Padding Properties</p>
+<p class=p1>
+Property	  ===     Description<br>
+padding	      ===       A shorthand property for setting all the padding properties in one declaration<br>
+padding-bottom	===    Sets the bottom padding of an element<br>
+padding-left   ===   	 Sets the left padding of an element<br>
+padding-right  ===  	 Sets the right padding of an element<br>
+padding-top    ====  	 Sets the top padding of an element</p>
+<br><br>
+<a id="next" href="9.css height.html">Next <i class="fa fa-angle-right"></i></a>
+<a id="previous" href="7.css margins.html"><i class="fa fa-angle-left"></i> Previous</a>
+<br><br><br><br><br><br>
+
+</body>
+</html>

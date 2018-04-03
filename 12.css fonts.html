@@ -1,0 +1,128 @@
+
+<html>
+<head>
+<link rel="shortcut icon" href="css-icon.ico" />
+<title>Fonts</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="content.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<ul class="left">
+	<lh class="left">CSS Tutorial</lh>
+	<li class="left"><a href="1.css introduction.html">CSS Introduction</a></li>
+	<li class="left"><a href="2.css how to use.html">CSS How To Use</a></li> 
+	<li class="left"><a href="3.css borders.html">CSS Borders</a></li> 
+	<li class="left"><a href="4.css backgrounds.html">CSS Backgrounds</a></li> 
+	<li class="left"><a href="5.css box model.html">CSS Box Model</a></li> 
+	<li class="left"><a href="6.css outline.html">CSS Outline</a></li> 
+	<li class="left"><a href="7.css margins.html">CSS Margins</a></li> 
+	<li class="left"><a href="8.css padding.html">CSS Padding</a></li> 
+	<li class="left"><a href="9.css height.html">CSS Height And Width</a></li>
+	<li class="left"><a href="10.css colors.html">CSS Colors</a></li> 
+    <li class="left"><a href="11.css lists.html">CSS Lists</a></li> 
+    <li class="left" style="background-color: mediumseagreen;"><a href="12.css fonts.html">CSS Fonts</a></li> 
+	<li class="left"><a href="13.css tables.html">CSS Tables</a></li> 
+	<li class="left"><a href="14.css layout.html">CSS Layout</a></li> 
+	<li class="left"><a href="15.css opacity.html">CSS Opacity</a></li> 
+	<li class="left"><a href="16.css navigation bar.html">CSS Navigation Bar</a></li> 
+	<li class="left"><a href="17.css sprites.html">CSS Sprites</a></li> 
+	<li class="left"><a href="18.css counters.html">CSS Counters</a></li> 
+	<li class="left"><a href="19.css website layout.html">CSS Website Layout</a></li> 
+	<li class="left"><a href="20.css rounded corners.html">CSS Rounded Corners</a></li> 
+ 
+</ul>
+<ul class="top">
+<li class="top"><a href="1.html Introduction.html">html</a>
+<li class="top"><a href="1.css introduction.html">css</a>
+<li class="top"><a href="1.sql introduction.html">sql</a>
+</ul>
+<h1 class="heading">CSS Fonts</h1>
+<br><br>
+<p class=p3>The CSS font properties define the font family, boldness, size, and the style of a text.</p><hr>
+<p class=p3><img src="css-pics\pp18.bmp"></p>
+<p class=p2>CSS Font Families</p>
+<p class=p3>In CSS, there are two types of font family names:</p>
+<ul class=l1>
+<li>generic family - a group of font families with a similar look (like "Serif" or "Monospace")<br>
+<li>font family - a specific font family (like "Times New Roman" or "Arial")</ul>
+<p class=p3><img src="css-pics\pp19.bmp"></p><hr>
+<p class=p2>Font Family</p>
+<p class=p3>The font family of a text is set with the font-family property.<br>
+
+The font-family property should hold several font names as a "fallback" system. If the browser does not support the first font, it tries the next font, and so on.<br>
+
+Start with the font you want, and end with a generic family, to let the browser pick a similar font in the generic family, if no other fonts are available.<br>
+
+Note: If the name of a font family is more than one word, it must be in quotation marks, like: "Times New Roman".<br>
+
+More than one font family is specified in a comma-separated list:</p><hr>
+<p class=p2>Font Style</p>
+<p class=p3>The font-style property is mostly used to specify italic text.<br>
+
+This property has three values:</p>
+<ul class=l1>
+<li>normal - The text is shown normally<br>
+<li>italic - The text is shown in italics<br>
+<li>oblique - The text is "leaning" (oblique is very similar to italic, but less supported)
+</ul><hr>
+<p class=p2>Example</p>
+<p class=p1>
+p.normal {<br>
+    font-style: normal;<br>
+}<br>
+
+p.italic {<br>
+    font-style: italic;<br>
+}<br>
+
+p.oblique {<br>
+    font-style: oblique;<br>
+}</p>
+<p class=p2> result</p>
+<p class=p3 style="font-style:normal;">This is a paragraph in normal style.</p>
+<p class=p3 style="font-style:italic;">This is a paragraph in italic style.</p>
+<p class=p3 style="font-style:oblique;">This is a paragraph in oblique style.</p><hr>
+<p class=p2>Font Size</p>
+<p class=p3>The font-size property sets the size of the text.<br>
+
+Being able to manage the text size is important in web design. However, you should not use font size adjustments to <br>
+make paragraphs look like headings, or headings look like paragraphs.<br>
+
+Always use the proper HTML tags, like &LTh1&gt - &lth6&gt for headings and &gtp&gt for paragraphs.<br>
+
+The font-size value can be an absolute, or relative size.<br>
+
+Absolute size:</p>
+<ul class=l1>
+<li>Sets the size relative to surrounding elements<br>
+<li>Allows a user to change the text size in browsers</ul>
+<p class=p1>Note: If you do not specify a font size, the default size for normal text, like paragraphs, is 16px (16px=1em).</p>
+<p class=p2>Set Font Size With Pixels</p>
+<p class=p3>Setting the text size with pixels gives you full control over the text size:</p>
+<p class=p2>Example</p>
+<p class=p1>h1 {<br>
+    font-size: 40px;<br>
+}<br>
+
+h2 {<br>
+    font-size: 30px;<br>
+}<br>
+
+p {<br>
+    font-size: 14px;<br>
+}</p>
+<p class=p2>result</p>
+<p class=p3 style="font-size:40px;">hello this is heading</p>
+<p class=p3 style="font-size:30px;">hello this is heading</p>
+<p class=p3 style="font-size:14px;">hello this is heading</p>
+
+
+<br><br>
+
+<a id="next" href="13.css tables.html">Next <i class="fa fa-angle-right"></i></a>
+<a id="previous" href="11.css lists.html"><i class="fa fa-angle-left"></i> Previous</a>
+<br><br><br><br><br><br>
+
+</body>
+</html>
